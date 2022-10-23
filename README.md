@@ -8,6 +8,8 @@ This is a syncthing integration for nextcloud
 
 ## Development progress / Goals
 
+This project is in VERY early stages.
+
 - [ ] API connection to syncthing
 - [ ] Syncthing API php bindings
 - [ ] Proof of concept
