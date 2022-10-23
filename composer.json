@@ -1,12 +1,12 @@
 {
-    "name": "nextcloud/app-tutorial",
-    "description": "Nextcloud App Tutorial",
+    "name": "Jonathantreffler/nextcloud-syncthing",
+    "description": "Nextcloud Syncthing Integration",
     "type": "project",
     "license": "AGPL",
     "authors": [
         {
-            "name": "Bernhard Posselt",
-            "email": "dev@bernhard-posselt.com"
+            "name": "Jonathan Treffler",
+            "email": "mail@jonathan-treffler.de"
         }
     ],
     "require": {},
