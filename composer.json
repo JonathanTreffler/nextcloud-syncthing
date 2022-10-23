@@ -1,5 +1,5 @@
 {
-    "name": "Jonathantreffler/nextcloud-syncthing",
+    "name": "jonathantreffler/nextcloud_syncthing",
     "description": "Nextcloud Syncthing Integration",
     "type": "project",
     "license": "AGPL",
