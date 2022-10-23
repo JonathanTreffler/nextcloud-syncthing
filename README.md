@@ -23,6 +23,29 @@ This is a syncthing integration for nextcloud
 - Will not work with external storage
 - Will not work on servers without the possibility to expose extra ports
 
+
+## Development
+[![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/JonathanTreffler/sharerenamer/)
+
+It will automatically spin up and configure a full Nextcloud, MariaDB, PhpMyAdmin and syncthing server.
+
+### Nextcloud Login:
+**Username:** dev
+
+**Password:** t2qQ1C6ktYUv7
+
+### PhpMyAdmin Login:
+**Username:** nextcloud
+
+**Password:** wdGq73jQB0p373gLdf6yLRj5
+
+### OCC
+```bash
+docker exec -it -u 33 gitpod_app_1 php occ
+```
+
+(It is fine to have these static logins, because gitpod has acess control built in and no sensitive data is stored in these dev servers)
+
 ## Try it 
 To install it change into your Nextcloud's apps directory:
 
