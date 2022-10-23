@@ -4,8 +4,25 @@
 [![Node GitHub Action](https://github.com/nextcloud/app-tutorial/workflows/Node/badge.svg)](https://github.com/nextcloud/app-tutorial/actions?query=workflow%3ANode)
 [![Lint GitHub Action](https://github.com/nextcloud/app-tutorial/workflows/Lint/badge.svg)](https://github.com/nextcloud/app-tutorial/actions?query=workflow%3ALint)
 
-This is the [tutorial app](https://docs.nextcloud.com/server/latest/developer_manual/app_development/tutorial.html) which shows how to develop a very simple notes app.
- 
+This is a syncthing integration for nextcloud
+
+## Development progress / Goals
+
+- [ ] API connection to syncthing
+- [ ] Syncthing API php bindings
+- [ ] Proof of concept
+- [ ] Files sidebar tab
+- [ ] Ability to create syncthing share in sidebar
+- [ ] User settings
+- [ ] Admin settings
+- [ ] Install instructions
+
+## Limitations
+
+- Will not work with server side encryption
+- Will not work with external storage
+- Will not work on servers without the possibility to expose extra ports
+
 ## Try it 
 To install it change into your Nextcloud's apps directory:
 
@@ -13,7 +30,7 @@ To install it change into your Nextcloud's apps directory:
 
 Then run:
 
-    git clone https://github.com/nextcloud/app-tutorial.git notestutorial
+    git clone https://github.com/JonathanTreffler/nextcloud-syncthing.git notestutorial
 
 Then install the dependencies using:
 
