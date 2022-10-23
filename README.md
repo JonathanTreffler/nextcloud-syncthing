@@ -25,7 +25,7 @@ This is a syncthing integration for nextcloud
 
 
 ## Development
-[![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/JonathanTreffler/sharerenamer/)
+[![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/JonathanTreffler/nextcloud-syncthing/)
 
 It will automatically spin up and configure a full Nextcloud, MariaDB, PhpMyAdmin and syncthing server.
 
@@ -67,3 +67,17 @@ The app tutorial also shows the very basic implementation of an app frontend usi
 - 🏗 To build the Javascript whenever you make changes, run `make build-js`
 
 To continuously run the build when editing source files you can make use of the `make watch-js` command.
+
+## Creating a new Release
+
+Steps:
+1. Place appstore private key at $HOME/.nextcloud/certificates/nextcloud-syncthing.key (/home/gitpod/.nextcloud/certificates/nextcloud-syncthing.key for gitpod)
+1. `krankerl login --appstore <appstore api key>`
+1. Bump app version using `krankerl version (major|minor|patch)`
+1. Add app update information to CHANGELOG.md
+1. Commit app version bump (`git commit -m "Bumped app version to <version>"`)
+1. Push commit to Github (`git push`)
+1. `krankerl package`
+1. `krankerl sign --package`
+1. Create a new Github release and attach the build/artifacts/nextcloud-syncthing.tar.gz file
+1. `krankerl publish <github release attached file public url>`
