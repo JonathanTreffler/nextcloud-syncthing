@@ -56,3 +56,15 @@ services:
       - NEXTCLOUD_TRUSTED_DOMAINS=*.gitpod.io
       - OVERWRITEPROTOCOL=https
       - NEXTCLOUD_UPDATE=1
+
+  nextcloud-syncthing:
+    image: syncthing/syncthing
+    container_name: nextcloud-syncthing
+    hostname: nextcloud-syncthing
+    environment:
+      - PUID=1000
+      - PGID=1000
+    volumes:
+      - /var/www/html/data/:/nextcloud/
+    network_mode: host
+    restart: unless-stopped
